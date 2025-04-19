@@ -31,7 +31,15 @@ composer install
 cp .env.example .env
 php artisan key:generate
 ```
-
+***Update Database credentials***
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_react
+DB_USERNAME=database_user
+DB_PASSWORD=database_password
+```
 ### 3. Configure your .env
 
 - Set database credentials
@@ -43,14 +51,21 @@ npm install
 npm run dev
 ```
 
+## 🧠 Spatie Laravel-Permission
+
+- This project includes [Spatie Laravel-Permission](https://github.com/spatie/laravel-permission).
+
+**⚠️ NOTE:** Make sure **Spatie Laravel-Permission** is installed before executing the command below. 
 ### 5. Migrate and seed the database
 ```bash
 php artisan migrate
 ```
 
-## 🧠 Spatie Laravel-Permission
-
-- This project includes [Spatie Laravel-Permission](https://github.com/spatie/laravel-permission).
+### 6. Seed Database
+```bash
+php artisan db:seed --class=PermissionTableSeeder
+php artisan db:seed --class=CreateAdminUserSeeder
+```
 
 ## 🔄 Usage
 Start the Laravel server:
