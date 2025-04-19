@@ -11,6 +11,7 @@ A modern full-stack boilerplate built with Laravel 12 and React via Inertia.js, 
 - **Flowbite-React** – UI components using Tailwind
 - **ShadCN UI** – Accessible and beautiful headless components
 - **Spatie Laravel-Permission** – Role & permission handling
+- **Laravel Modules** – For modular architecture in Laravel.
 
 ---
 
@@ -31,6 +32,12 @@ composer install
 cp .env.example .env
 php artisan key:generate
 ```
+
+### 3. Configure your .env
+
+- Set database credentials
+- (Optional) Set mail or queue configs
+
 ***Update Database credentials***
 ```bash
 DB_CONNECTION=mysql
@@ -40,10 +47,6 @@ DB_DATABASE=laravel_react
 DB_USERNAME=database_user
 DB_PASSWORD=database_password
 ```
-### 3. Configure your .env
-
-- Set database credentials
-- (Optional) Set mail or queue configs
 
 ### 4. Install frontend dependencies
 ```bash
@@ -91,6 +94,8 @@ You can use both libraries side-by-side depending on your UI design preferences.
 - [Flowbite-React](https://flowbite-react.com/)
 - [ShadCN UI](https://ui.shadcn.com/)
 - [Spatie Permission Docs](https://github.com/spatie/laravel-permission)
+- [Laravel Module](https://github.com/nWidart/laravel-modules)
+
 
 ## ⚙️ Build for Production
 ```bash
